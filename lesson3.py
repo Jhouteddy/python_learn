@@ -133,3 +133,51 @@ print("c=", c)
 # tuple()轉換函是可將其他的東西做成tuple
 items_tuple = tuple(items)
 print("把items轉換程tuple items_tuple=", items_tuple)
+
+# dictionary
+# 字典(dictionary)
+# 要建立dict,要用大括號包住以逗號分隔的 key:value
+example_dict = {"day": "hello", "num": 50}
+print("example_dict=", example_dict)
+
+# 用dict()來轉換
+tos = ("ab", "cd", "ef")
+print(dict(tos))
+
+# 可用[key]來添加或變更項目
+item_dict = {"a": "apple"}
+print("item_dict=", item_dict)
+item_dict["b"] = "banana"
+print("新增b:banana,item_dict=", item_dict)
+item_dict["a"] = "ape"
+print("修改a:ape,item_dict=", item_dict)
+
+# 用update()來合併字典
+# 若第二個dict與要合併的dict有相同key的時候,第二個dict的值會勝出
+others_dict = {"c": "cat", "d": "duck"}
+item_dict.update(others_dict)
+print("合併others_dict,item_dict=", item_dict)
+
+# 用del與key來刪除項目
+del item_dict["d"]
+print("刪除d,item_dict=", item_dict)
+# 可用clear()或者重新指派一個空的dict來刪除所有項目
+
+# 使用in來測試key
+print("f in item_dict=", "f" in item_dict)
+print("a in item_dict=", "a" in item_dict)
+
+# 用[key]或者get()來取得一個項目
+print("item_dict['a']=", item_dict["a"])
+print("item_dict.get('f')=", item_dict.get('f'))
+print("item_dict.get('b')=", item_dict.get('b'))
+
+# 用keys()來取得所以key
+item_keys = list(item_dict.keys())
+print("all item_keys=", item_keys)
+# 用values()來取得所有的值
+item_values = list(item_dict.values())
+print("all item_values=", item_values)
+# 用items()來取得所有的key/values
+item_items = list(item_dict.items())
+print("all item_items=", item_items)
