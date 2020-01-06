@@ -181,3 +181,6 @@ print("all item_values=", item_values)
 # 用items()來取得所有的key/values
 item_items = list(item_dict.items())
 print("all item_items=", item_items)
+
+# 用＝來指派,用copy()來複製(與list相同)
+# =指標的概念
